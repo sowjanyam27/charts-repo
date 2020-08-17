@@ -18,7 +18,7 @@ const chart = {
     map: "world",
   },
   title: {
-    text: null,
+    text: "Number of Users per Each Country",
   },
   credits: {
     enabled: false,
@@ -76,10 +76,10 @@ const chart = {
       },
       {
         from: 300,
-        to: 1000,
+        to: 3000,
       },
       {
-        from: 1000,
+        from: 3000,
       },
     ],
   },

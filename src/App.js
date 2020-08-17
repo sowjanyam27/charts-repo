@@ -3,6 +3,9 @@ import Papa from "papaparse";
 import MainPage from "./components/MainPage";
 import LanguagesPage from "./components/LanguagesPage";
 import AppUsersPage from "./components/AppUsersPage";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 export default function () {
   const [rows, setRows] = React.useState([]);
@@ -74,10 +77,10 @@ export default function () {
   }, []); // [] means just do this once, after initial render
   console.log("rows:", rows);
   return (
-    <div className="app">
+    <Container>
       <MainPage countries={countries} />
       <LanguagesPage lang={languages} />
       <AppUsersPage appUsers={appUsers} />
-    </div>
+    </Container>
   );
 }

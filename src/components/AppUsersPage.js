@@ -11,7 +11,7 @@ const chart = {
     type: "variablepie",
   },
   title: {
-    text: null,
+    text: "Moible App Users",
   },
   credits: {
     enabled: false,
